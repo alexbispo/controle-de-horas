@@ -3,6 +3,8 @@
     package="br.com.jovens.controledehoras"
     android:versionCode="1"
     android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -12,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Controlehoras" >
+        android:theme="@style/Theme.Ctl" >
         <activity
             android:name="br.com.jovens.controledehoras.activity.SplashScreenActivity"
             android:label="@string/app_name"
@@ -29,6 +31,7 @@
         <activity
             android:name="br.com.jovens.controledehoras.activity.CalendarioActivity"
             android:label="@string/app_name"
+            android:theme="@style/Theme.Ctl"
             android:screenOrientation="portrait" >
         </activity>
     </application>
