@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="controle-de-horas_coreV1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/controle-de-horas_coreV1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

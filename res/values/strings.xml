@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">Controle de horas</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="jovens_corporation">Jovens and jovens Corporation</string>
-    <string name="title_activity_calendario">CalendarioActivity</string>
-
-</resources>
