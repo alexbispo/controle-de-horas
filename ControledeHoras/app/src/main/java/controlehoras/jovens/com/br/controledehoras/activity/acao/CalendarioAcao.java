@@ -1,5 +1,6 @@
 package controlehoras.jovens.com.br.controledehoras.activity.acao;
 
+import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
 
@@ -9,6 +10,7 @@ import java.util.List;
 import br.com.controledehoras.core.beans.RegistroArquivo;
 import br.com.controledehoras.core.csv.CSVHelper;
 import controlehoras.jovens.com.br.controledehoras.activity.CalendarioActivity;
+import controlehoras.jovens.com.br.controledehoras.activity.ControleActivity;
 import controlehoras.jovens.com.br.controledehoras.dao.ApontamentoDAO;
 import controlehoras.jovens.com.br.controledehoras.entity.ApontamentoEntity;
 import controlehoras.jovens.com.br.controledehoras.helper.SelecionadorArquivoHelper;
@@ -19,9 +21,9 @@ import controlehoras.jovens.com.br.controledehoras.util.MensagemUtil;
  */
 public class CalendarioAcao {
 
-    private CalendarioActivity calendario;
+    private ControleActivity calendario;
 
-    public CalendarioAcao(CalendarioActivity calendario){
+    public CalendarioAcao(ControleActivity calendario){
         this.calendario = calendario;
     }
 

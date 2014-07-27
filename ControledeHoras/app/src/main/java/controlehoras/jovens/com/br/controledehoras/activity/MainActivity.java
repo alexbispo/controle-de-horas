@@ -13,8 +13,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
+import java.util.ArrayList;
+
 import controlehoras.jovens.com.br.controledehoras.fragment.NavigationDrawerFragment;
 import controlehoras.jovens.com.br.controledehoras.R;
+import it.gmariotti.cardslib.library.internal.Card;
+import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
+import it.gmariotti.cardslib.library.internal.CardHeader;
+import it.gmariotti.cardslib.library.internal.CardThumbnail;
+import it.gmariotti.cardslib.library.view.CardListView;
+import it.gmariotti.cardslib.library.view.CardView;
 
 
 public class MainActivity extends Activity
@@ -43,6 +51,27 @@ public class MainActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        // Create a Card
+        Card card = new Card(this, R.layout.row_card);
+
+        // Create a CardHeader
+        CardHeader header = new CardHeader(this);
+        header.setTitle("Seja bem vindo");
+
+        card.setTitle("Saldo atual ");
+        CardThumbnail thumb = new CardThumbnail(this);
+        thumb.setDrawableResource(R.drawable.ic_launcher);
+
+        card.addCardThumbnail(thumb);
+
+        // Add Header to card
+        card.addCardHeader(header);
+
+        // Set card in the cardView
+        CardView cardView = (CardView) findViewById(R.id.carddemo);
+        cardView.setCard(card);
+
     }
 
     @Override
