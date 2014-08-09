@@ -23,9 +23,12 @@ android {
 dependencies {
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':libraries:cards-library')
+    compile project(':libraries:cards-library' )
+    compile project(':libraries:timesSquare-library')
+
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile 'com.android.support:support-v4:19.+'
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile 'com.android.support:support-v13:19.+'
+
 }

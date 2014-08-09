@@ -1,1 +1,1 @@
-include ':app', ':libraries:cards-library'
+include ':app', ':libraries:cards-library', ':libraries:timesSquare-library'

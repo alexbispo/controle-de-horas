@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <it.gmariotti.cardslib.library.view.CardView
+        android:id="@+id/carddemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card:card_layout_resourceID="@layout/card_thumbnail_layout" />
+
+</FrameLayout>

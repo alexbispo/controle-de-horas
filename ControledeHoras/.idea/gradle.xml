@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/cards-library" />
+            <option value="$PROJECT_DIR$/libraries/timesSquare-library" />
           </set>
         </option>
       </GradleProjectSettings>

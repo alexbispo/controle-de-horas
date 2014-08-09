@@ -64,6 +64,7 @@
     <orderEntry type="library" exported="" name="controle-de-horas_coreV1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-v13-19.1.0" level="project" />
+    <orderEntry type="module" module-name="timesSquare-library" exported="" />
     <orderEntry type="module" module-name="cards-library" exported="" />
   </component>
 </module>

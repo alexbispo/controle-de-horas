@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ControledeHoras.iml" filepath="$PROJECT_DIR$/ControledeHoras.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/cards-library/cards-library.iml" filepath="$PROJECT_DIR$/libraries/cards-library/cards-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/timesSquare-library/timesSquare-library.iml" filepath="$PROJECT_DIR$/libraries/timesSquare-library/timesSquare-library.iml" />
     </modules>
   </component>
 </project>
