@@ -15,9 +15,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     private final static int TAB_ABA_INICIO = 0;
     private final static int TAB_ABA_CALENDARIO = 1;
-    private final static int TAB_ABA_SALDO = 2;
 
-    protected static final String[] ABAS_DA_TABELA = new String[] {"Inicio" , "Saldo por dia" , "Saldo por quadrimestre"};
+    protected static final String[] ABAS_DA_TABELA = new String[] {"Inicio" , "Saldo"};
 
     public SectionsPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -34,8 +33,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             return HomeFragment.newInstance(position + 1);
         } else if (position == TAB_ABA_CALENDARIO) {
             return CalendarFragment.newInstance(position + 1);
-        } else if(position == TAB_ABA_SALDO) {
-            return SaldoFragment.newInstance(position + 1);
         }
             return HomeFragment.newInstance(position + 1);
     }

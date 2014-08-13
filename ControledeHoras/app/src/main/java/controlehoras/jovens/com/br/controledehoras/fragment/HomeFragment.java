@@ -31,19 +31,6 @@ public class HomeFragment extends Fragment {
         // Create a Card
         Card card = new Card(getActivity(), R.layout.row_card);
 
-        // Create a CardHeader
-        CardHeader header = new CardHeader(getActivity());
-        header.setTitle("Seja bem vindo");
-
-        card.setTitle("Não se descontrole ");
-        CardThumbnail thumb = new CardThumbnail(getActivity());
-        thumb.setDrawableResource(R.drawable.ic_homer_atrasado);
-
-        card.addCardThumbnail(thumb);
-
-        // Add Header to card
-        card.addCardHeader(header);
-
         // Set card in the cardView
         CardView cardView = (CardView) viewHome.findViewById(R.id.carddemo);
         cardView.setCard(card);

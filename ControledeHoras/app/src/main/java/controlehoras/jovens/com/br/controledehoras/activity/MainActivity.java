@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
+import com.achep.header2actionbar.FadingActionBarHelper;
+
 import java.util.ArrayList;
 
 import controlehoras.jovens.com.br.controledehoras.fragment.NavigationDrawerFragment;
@@ -129,6 +131,8 @@ public class MainActivity extends Activity
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
     /**
      * A placeholder fragment containing a simple view.

@@ -3,4 +3,5 @@
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="controlehoras.jovens.com.br.controledehoras.activity.ControleActivity" />
+    tools:context="controlehoras.jovens.com.br.controledehoras.activity.ControleActivity"
+    />
