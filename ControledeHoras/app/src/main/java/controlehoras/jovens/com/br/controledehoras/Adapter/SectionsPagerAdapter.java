@@ -29,12 +29,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (position == TAB_ABA_INICIO) {
-            return HomeFragment.newInstance(position + 1);
-        } else if (position == TAB_ABA_CALENDARIO) {
-            return CalendarFragment.newInstance(position + 1);
-        }
-            return HomeFragment.newInstance(position + 1);
+       return null;
     }
 
     // Total de paginas na view

@@ -6,6 +6,12 @@
         android:icon="@drawable/ic_action_go_to_today"
         android:showAsAction="always" />
 
+    <!-- item de calendario-->
+    <item android:id="@+id/atualizar"
+        android:title="Atualizar"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always" />
+
    <!-- item do menu principal da actionBar-->
     <item
         android:icon="@drawable/ic_action_overflow"

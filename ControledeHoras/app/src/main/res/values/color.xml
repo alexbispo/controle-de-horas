@@ -29,5 +29,10 @@
     
     <!-- Grey cores-->
     <color name="Grey600">#757575</color>
+
+    <!-- Action bar background -->
+    <color name="actionbar_bg">#1a237e</color>
+    
+    <color name="Pink500">#e91e63</color>
     
 </resources>

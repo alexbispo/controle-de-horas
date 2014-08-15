@@ -10,48 +10,36 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.achep.header2actionbar.FadingActionBarHelper;
+
 import controlehoras.jovens.com.br.controledehoras.Adapter.SectionsPagerAdapter;
 import controlehoras.jovens.com.br.controledehoras.R;
 import controlehoras.jovens.com.br.controledehoras.activity.acao.CalendarioAcao;
+import controlehoras.jovens.com.br.controledehoras.fragment.HomeFragment;
+import controlehoras.jovens.com.br.controledehoras.fragment.ListViewFragment;
 import controlehoras.jovens.com.br.controledehoras.helper.SelecionadorArquivoHelper;
 
-public class ControleActivity extends Activity implements ActionBar.TabListener {
+public class ControleActivity extends Activity  {
 
     private CalendarioAcao acao;
     private SelecionadorArquivoHelper selecionadorArquivo;
-
-    SectionsPagerAdapter mSectionsPagerAdapter;
-    ViewPager mViewPager;
+    private FadingActionBarHelper mFadingActionBarHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_controle);
-
-
         iniciarObjetos();
 
-        final ActionBar actionBar = getActionBar();
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        // esse atributo que cuida do efeito na actionBar
+        mFadingActionBarHelper = new FadingActionBarHelper(montarActionBar(), getResources().getDrawable(R.drawable.actionbar_bg));
 
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
-        mViewPager = (ViewPager) findViewById(R.id.pager);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
-
-        mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-            @Override
-            public void onPageSelected(int position) {
-                actionBar.setSelectedNavigationItem(position);
-            }
-        });
-
-        // Cria a tabBar
-        for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
-            actionBar.addTab(
-                    actionBar.newTab()
-                            .setText(mSectionsPagerAdapter.getPageTitle(i))
-                            .setTabListener(this));
+        if (savedInstanceState == null) {
+            getFragmentManager().beginTransaction()
+                    .add(R.id.content, new HomeFragment())
+                    .commit();
         }
+
     }
 
     @Override
@@ -77,17 +65,12 @@ public class ControleActivity extends Activity implements ActionBar.TabListener 
 
     }
 
-    @Override
-    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        mViewPager.setCurrentItem(tab.getPosition());
-    }
+    // Metodo criado para cuidar da montagem da actionBar, por enquanto só foi solicitado que o titulo nao apareça
+    private ActionBar montarActionBar(){
+        final ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
 
-    @Override
-    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-    }
-
-    @Override
-    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+        return actionBar;
     }
 
     private void iniciarObjetos(){
@@ -113,6 +96,10 @@ public class ControleActivity extends Activity implements ActionBar.TabListener 
 
     public SelecionadorArquivoHelper getSelecionadorArquivo(){
         return selecionadorArquivo;
+    }
+
+    public FadingActionBarHelper getFadingActionBarHelper() {
+        return mFadingActionBarHelper;
     }
 
 
