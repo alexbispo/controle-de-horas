@@ -4,12 +4,32 @@
     android:layout_height="match_parent"
     tools:context=".fragment.HomeFragment"
     xmlns:card="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:scrollbarStyle="outsideOverlay">
 
-    <it.gmariotti.cardslib.library.view.CardView
-        android:id="@+id/carddemo"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        card:card_layout_resourceID="@layout/card_thumbnail_layout" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seja bem vindo ao nosso aplicativo, aqui você tera controle sobre suas horas sem preocupações."
+            android:layout_gravity="center|top"
+            android:id="@+id/PrimeiroTexto" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <it.gmariotti.cardslib.library.view.CardView
+            android:id="@+id/carddemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card:card_layout_resourceID="@layout/card_thumbnail_layout" />
+
+    </LinearLayout>
 
 </FrameLayout>

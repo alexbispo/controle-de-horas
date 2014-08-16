@@ -1,8 +1,33 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="controlehoras.jovens.com.br.controledehoras.activity.ControleActivity" >
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- item de calendario-->
+    <item android:id="@+id/saldoPorDia"
+        android:title="@string/calendarioMenu"
+        android:icon="@drawable/ic_action_go_to_today"
+        android:showAsAction="always" />
+
+    <!-- item de calendario-->
+    <item android:id="@+id/atualizar"
+        android:title="Atualizar"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always" />
+
+   <!-- item do menu principal da actionBar-->
+    <item
+        android:icon="@drawable/ic_action_overflow"
+        android:id="@+id/menuActionBar"
+        android:showAsAction="always"
+        android:title="@string/titulo_menu">
+
+        <menu>
+            <item
+                android:title="@string/importar"
+                android:icon="@drawable/ic_action_collection"
+                android:id="@+id/importar"
+                android:showAsAction="always"
+                ></item>
+        </menu>
+
+    </item>
+
 </menu>

@@ -14,5 +14,12 @@
     <string name="title_activity_card_list">CardListActivity</string>
     <string name="welcome">Este aplicativo está aqui para te ajudar a organizar seu banco de horas:</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_action_bar">ActionBarActivity</string>
+    <string name="titulo_menu">Opções</string>
+    <string name="importar">Importar CSV</string>
+    <string name="calendarioMenu">Calendario</string>
+    <string name="title_activity_live_card_service">Hello World LiveCard</string>
+    <string name="action_stop">Stop</string>
+    <string name="title_activity_teste">TesteActivity</string>
 
 </resources>

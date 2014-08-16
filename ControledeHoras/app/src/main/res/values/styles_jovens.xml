@@ -29,20 +29,21 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_jovens</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_jovens</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Jovens</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextColor.Jovens</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
 
     </style>
-
 
     <style name="ActionBar.Solid.Jovens" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
-        <item name="android:background">@drawable/ab_solid_jovens</item>
-        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_jovens</item>
+        <item name="android:background">@color/indigo900</item>
+        <item name="android:backgroundStacked">@color/indigo50</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_jovens</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Jovens</item>
-        <item name="android:titleTextStyle">@style/Theme.AppTheme.actionBarTitle</item>
-    </style>
+        <item name="android:titleTextStyle">@style/ActionBarTitleCorText.Jovens</item>
+        <item name="android:windowTitleSize">48dp</item>
 
-    <style name="Theme.AppTheme.actionBarTitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/white</item>
 
     </style>
 
@@ -59,9 +60,6 @@
         <item name="android:listSelector">@drawable/selectable_background_jovens</item>
     </style>
 
-    <style name="ActionBarTabStyle.Jovens" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
-        <item name="android:background">@drawable/tab_indicator_ab_jovens</item>
-    </style>
 
     <style name="DropDownNav.Jovens" parent="@android:style/Widget.Holo.Light.Spinner">
         <item name="android:background">@drawable/spinner_background_ab_jovens</item>
@@ -82,5 +80,47 @@
         <item name="android:popupMenuStyle">@style/PopupMenu.Jovens</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Jovens</item>
     </style>
+
+    <!-- este style serve para alterar cor e outros detalhes da tab da view-->
+    <style name="ActionBarTabStyle.Jovens" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_jovens</item>
+        <item name="android:actionBarDivider">@null</item>
+    </style>
+
+    <!-- estilo para cor do texto da tab do actionBar-->
+    <style name="ActionBarTabTextColor.Jovens" parent="android:Widget.ActionBar.TabText">
+        <item name="android:textColor">@color/Grey600</item>
+        <item name="android:textSize">14dp</item>
+
+    </style>
+
+    <!-- estilo para cor do text do actionbar-->
+    <style name="ActionBarTitleCorText.Jovens" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <!--  ************************
+          ||||||||||||||||||||||||
+                   HEADER
+          ||||||||||||||||||||||||
+          ************************  -->
+    <style name="Header.TitleText" parent="android:TextAppearance.Holo">
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:shadowColor">#8000</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+
+    </style>
+
+    <style name="Header.SubTitleText" parent="Header.TitleText">
+
+        <item name="android:textColor">@color/Pink500</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 
 </resources>
